@@ -1,14 +1,16 @@
 /* colors
 ================================================== */
 
-// colors theme 01 - original
+
+/*colors theme 01 - original
 $primary: #4ecdc4 !default;
 $secondary: #ff6b6b !default;
 $theme-grey: #2e353c;
 $theme-greydark: #3d4142;
 $theme-greylight: #dadada;
 $theme-greymiddle: #716f73;
-$theme-greywhite: #fbfbfb;
+$theme-greywhite: #fbfbfb;*/
+
 
 /*
 // colors theme 02 - green 01
@@ -21,6 +23,7 @@ $theme-greymiddle: #716f73;
 $theme-greywhite: #fbfbfb;
 */
 
+
 /*
 // colors theme 03 - green 02
 $primary: #7fb414 !default;
@@ -31,6 +34,7 @@ $theme-greylight: #dadada;
 $theme-greymiddle: #716f73;
 $theme-greywhite: #fbfbfb;
 */
+
 
 /*
 // colors theme 04 - red 01
@@ -43,6 +47,7 @@ $theme-greymiddle: #716f73;
 $theme-greywhite: #fbfbfb;
 */
 
+
 /*
 // colors theme 05 - red 02
 $primary: #db3b61 !default;
@@ -54,7 +59,6 @@ $theme-greymiddle: #716f73;
 $theme-greywhite: #fbfbfb;
 */
 
-/*
 // colors theme 06 - blue
 $primary: #0960bd !default;
 $secondary: #429ffd !default;
@@ -63,7 +67,6 @@ $theme-greydark: #393e46;
 $theme-greylight: #dadada;
 $theme-greymiddle: #716f73;
 $theme-greywhite: #fbfbfb;
-*/
 
 /*
 // colors theme 07 - yellow
@@ -75,6 +78,7 @@ $theme-greylight: #dadada;
 $theme-greymiddle: #716f73;
 $theme-greywhite: #fbfbfb;
 */
+
 
 /*
 // colors theme 08 - pink
@@ -91,7 +95,6 @@ $success: #5cb85c !default;
 $info: #5bc0de !default;
 $warning: #f0ad4e !default;
 $danger: #d9534f !default;
-
 $nav-hover: #bbb;
 
 /* ---- */
@@ -102,35 +105,26 @@ $gray-dark: lighten($gray-base, 20%) !default; // #333
 $gray: lighten($gray-base, 33.5%) !default; // #555
 $gray-light: lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
-
 $btn-default-color: #333 !default;
 $btn-default-bg: #fff !default;
 $btn-default-border: #ccc !default;
-
 $btn-primary-color: #fff !default;
 $btn-primary-bg: $primary !default;
 $btn-primary-border: darken($btn-primary-bg, 5%) !default;
-
 $btn-secondary-color: #fff !default;
 $btn-secondary-bg: $secondary !default;
 $btn-secondary-border: darken($btn-secondary-bg, 5%) !default;
-
 $btn-success-color: #fff !default;
 $btn-success-bg: $success !default;
 $btn-success-border: darken($btn-success-bg, 5%) !default;
-
 $btn-info-color: #fff !default;
 $btn-info-bg: $info !default;
 $btn-info-border: darken($btn-info-bg, 5%) !default;
-
 $btn-warning-color: #fff !default;
 $btn-warning-bg: $warning !default;
 $btn-warning-border: darken($btn-warning-bg, 5%) !default;
-
 $btn-danger-color: #fff !default;
 $btn-danger-bg: $danger !default;
 $btn-danger-border: darken($btn-danger-bg, 5%) !default;
-
 $btn-link-disabled-color: $gray-light !default;
-
 $input-border-focus: $btn-primary-color !default;
