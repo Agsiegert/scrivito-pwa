@@ -4,7 +4,7 @@ import paragraphWidgetIcon from '../../assets/images/text_widget.svg';
 Scrivito.provideEditingConfig('ParagraphWidget', {
     title: 'Paragraph',
     description: 'Big Text',
-    thumbnail: `/${paragraphWidgetIcon}`,
+    thumbnail: paragraphWidgetIcon,
     attributes: {
         alignment: {
             title: 'Alignment',

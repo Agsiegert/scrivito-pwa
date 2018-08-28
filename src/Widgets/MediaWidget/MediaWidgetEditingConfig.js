@@ -3,7 +3,7 @@ import boxWidgetIcon from '../../assets/images/box_widget.svg';
 
 Scrivito.provideEditingConfig('MediaWidget', {
     title: 'Media Object',
-    thumbnail: `/${boxWidgetIcon}`,
+    thumbnail: boxWidgetIcon,
     attributes: {
         backgroundColor: {
             title: 'Background color',

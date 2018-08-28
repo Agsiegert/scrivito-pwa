@@ -3,17 +3,17 @@ import testimonialSliderWidgetIcon from '../../assets/images/testimonial_slider_
 import TestimonialWidget from '../TestimonialWidget/TestimonialWidgetClass';
 
 Scrivito.provideEditingConfig('TestimonialSliderWidget', {
-  title: 'Testimonial Slider',
-  thumbnail: `/${testimonialSliderWidgetIcon}`,
-  attributes: {
-    testimonials: {
-      title: 'Testimonials',
+    title: 'Testimonial Slider',
+    thumbnail: testimonialSliderWidgetIcon,
+    attributes: {
+        testimonials: {
+            title: 'Testimonials',
+        },
     },
-  },
-  properties: [
-    'testimonials',
-  ],
-  initialContent: {
-    testimonials: [new TestimonialWidget({})],
-  },
+    properties: [
+        'testimonials',
+    ],
+    initialContent: {
+        testimonials: [new TestimonialWidget({})],
+    },
 });
