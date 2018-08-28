@@ -12,6 +12,7 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -247,6 +248,10 @@ module.exports = {
         ],
     },
     plugins: [
+
+        new CopyWebpackPlugin([
+            { from: './node_modules/scrivito/scrivito/index.html', to: 'scrivito/index.html' },
+        ]),
         // Makes some environment variables available in index.html.
         // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
         // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -329,7 +334,7 @@ module.exports = {
             },
             minify: true,
             // For unknown URLs, fallback to the index page
-            navigateFallback: publicUrl + '/index.html',
+            //navigateFallback: publicUrl + '/index.html',
             // Ignores URLs starting from /__ (useful for Firebase):
             // https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
             navigateFallbackWhitelist: [/^(?!\/__).*/],
