@@ -26,7 +26,7 @@ else if (shadow === 'large')
 
   return (
     <Scrivito.WidgetTag className={ classNames.join(' ') }>
-      <Scrivito.ContentTag content={ widget } className="card-body"/>
+      <Scrivito.ContentTag content={ widget } attribute="body" className="card-body"/>
     </Scrivito.WidgetTag>
   );
 });

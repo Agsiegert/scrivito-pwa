@@ -577,6 +577,34 @@
         color: #222;
     }
     
+    .card.bg-dark-image,
+    .card.bg-grey,
+    .card.bg-greydark,
+    .card.bg-greylight,
+    .card.bg-greymiddle,
+    .card.bg-greywhite,
+    .card.bg-white,
+    .card.bg-primary,
+    .card.bg-secondary,
+    .card.bg-accent,
+    .card.bg-dark-color,
+    .card.bg-light-color,
+    .card.bg-gradient-dark-image,
+    .card.bg-gradient-grey,
+    .card.bg-gradient-greydark,
+    .card.bg-gradient-greylight,
+    .card.bg-gradient-greymiddle,
+    .card.bg-gradient-greywhite,
+    .card.bg-gradient-white,
+    .card.bg-gradient-primary,
+    .card.bg-gradient-secondary,
+    .card.bg-gradient-accent,
+    .card.bg-gradient-dark-color,
+    .card.bg-gradient-light-color,
+    .card.bg-transparent {
+        padding: 0 0 !important;
+    }
+    
     .bg-dark-image,
     .bg-grey,
     .bg-greydark,
@@ -1945,7 +1973,7 @@
     }
     
     .card-theme .card-body {
-        max-height: 300px;
+        //max-height: 300px;
         padding: 0;
         img {
             padding: 0 !important;
