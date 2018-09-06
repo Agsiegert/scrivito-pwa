@@ -2,8 +2,9 @@ import * as React from "react";
 import * as Scrivito from "scrivito";
 
 Scrivito.provideComponent("MediaContainerWidget", ({ widget }) => {
-    const imageClassNames = ['mt-2 mr-3']
+    const imageClassNames = ['mr-3']
     const image = widget.get('mediaImage');
+   
     
 
     if (widget.get("alignImage") === "top") {
@@ -17,8 +18,8 @@ Scrivito.provideComponent("MediaContainerWidget", ({ widget }) => {
     let realImage = <Scrivito.ImageTag
     content={ image }
     alt='Bild'
-    width="96px"
-    height="96px"
+    width="60px"
+    height="60px"
     className = { imageClassNames.join(' ') }
   />;
 
@@ -30,6 +31,7 @@ Scrivito.provideComponent("MediaContainerWidget", ({ widget }) => {
     return ( 
         
         <div className="media">
+        
         {realImage}
          <
         Scrivito.ContentTag 
@@ -37,7 +39,13 @@ Scrivito.provideComponent("MediaContainerWidget", ({ widget }) => {
         content = { widget }
         attribute = "content" /
         >
+       
         </div>
+       
        
     );
 });
+
+
+        
+      

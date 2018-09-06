@@ -13,14 +13,10 @@ Scrivito.provideEditingConfig("MediaContainerWidget", {
         mediaImage: {
             title: 'Media object image',
         },
-        link: {
-            title: 'Link',
-            description: 'The link where the media object should lead.',
-        },
+
     },
     properties: [
         "alignImage",
-        "link",
         "mediaImage"
 
     ],

@@ -6,7 +6,7 @@ const MediaContainerWidget = Scrivito.provideWidgetClass("MediaContainerWidget",
         content: "widgetlist",
         alignImage: ["enum", { values: ["top", "middle", "bottom"] }],
         mediaImage: 'reference',
-        link: 'link'
+
     }
 });
 

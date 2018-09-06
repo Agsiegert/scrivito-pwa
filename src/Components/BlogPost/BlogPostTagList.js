@@ -11,7 +11,7 @@ function BlogPostTagList({ tags }) {
             {
               tags.map(tag =>
                 <li key={ tag }>
-                  <a
+                  <a className="btn btn-secondary"
                     href="#"
                     onClick={
                       e => {

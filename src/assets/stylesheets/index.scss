@@ -366,7 +366,7 @@
         content: "";
         display: block;
         margin: 40px auto;
-        width: 300px;
+        width: 33vw;
         height: 3px;
         background: $secondary;
     }
@@ -375,9 +375,13 @@
         content: "";
         display: block;
         margin: 40px auto;
-        width: 300px;
+        width: 33vw;
         height: 3px;
         background: $secondary;
+    }
+    
+    .bg-greydark .text-left {
+        word-wrap: break-word;
     }
     
     .rounded-lg {
@@ -574,7 +578,6 @@
     p.bg-gradient-dark-color,
     p.bg-gradient-light-color {
         padding: 10px 0;
-        color: #222;
     }
     
     .card.bg-dark-image,
@@ -621,6 +624,41 @@
         }
     }
     
+    .media {
+        border-top: 1px solid $theme-greylight;
+        border-bottom: 1px solid $theme-greylight;
+        padding: 9px;
+        margin-top: -1px;
+        img {
+            margin: 0;
+        }
+        .h1,
+        .h2,
+        .h3,
+        .h4 {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            color: $theme-greymiddle;
+            &:hover,
+            &:active,
+            &:focus {
+                text-decoration: none !important;
+            }
+        }
+        .fa-chevron-right {
+            color: $theme-greylight;
+        }
+    }
+    
+    .media {
+        @media (min-width: $screen-lg-min) {
+            width: 1100px;
+            margin: 0 auto !important;
+        }
+    }
+    
     @media (max-width: $screen-xs-max) {
         .bg-dark-image,
         .bg-grey,
@@ -631,7 +669,7 @@
         .bg-white {
             &.min-height,
             &.medium-height {
-                min-height: 0;
+                min-height: 33.33vh;
             }
         }
     }
@@ -1658,6 +1696,10 @@
         overflow: hidden;
     }
     
+    .timeline.no-border:before {
+        background-color: transparent !important;
+    }
+    
     .timeline:before {
         top: 0;
         bottom: 0;
@@ -1907,7 +1949,7 @@
         border: 10px solid #fff;
         display: block;
         text-align: center;
-        background: $theme-greylight;
+        background: $secondary;
         border-radius: 50%;
     }
     
@@ -1921,7 +1963,7 @@
         font-family: "PT Sans Narrow", sans-serif;
         font-weight: 700;
         text-align: center;
-        background: $secondary;
+        background: $primary;
         border-radius: 50%;
     }
     
@@ -3487,6 +3529,7 @@
     }
     
     footer div section.bg-dark-color {
+        background-color: $nav-hover !important;
         a {
             display: block;
             width: 100%;

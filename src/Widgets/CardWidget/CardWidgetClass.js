@@ -2,6 +2,7 @@ import * as Scrivito from 'scrivito';
 import { registerTextExtract } from '../../utils/textExtractRegistry';
 
 const CardWidget = Scrivito.provideWidgetClass('CardWidget', {
+    onlyInside: 'CardContainerWidget',
     attributes: {
         body: 'widgetlist',
         useOffset: ['enum', { values: ['yes', 'no'] }],

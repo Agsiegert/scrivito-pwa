@@ -2,6 +2,7 @@ import * as Scrivito from 'scrivito';
 import { registerTextExtract } from '../../utils/textExtractRegistry';
 
 const MediaWidget = Scrivito.provideWidgetClass('MediaWidget', {
+    onlyInside: 'MediaContainerWidget',
     attributes: {
         body: 'widgetlist',
         useGradient: ['enum', { values: ['yes', 'no'] }],
