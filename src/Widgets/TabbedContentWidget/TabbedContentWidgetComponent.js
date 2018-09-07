@@ -4,7 +4,7 @@ import InPlaceEditingPlaceholder from '../../Components/InPlaceEditingPlaceholde
 import ButtonTagList from '../../Components/ButtonTagList';
 
 
-class TabbedBlocksComponent extends React.Component {
+class TabbedContentComponent extends React.Component {
   
   constructor(props) {
     super(props);
@@ -69,7 +69,7 @@ class TabbedBlocksComponent extends React.Component {
           <div className="row">
             {
               items.map((item) =>
-                <TabbedBlock
+                <TabbedContent
                   key={ item.id() }
                   widget={ item }
                   
@@ -84,30 +84,28 @@ class TabbedBlocksComponent extends React.Component {
   }
 }
 
-Scrivito.provideComponent('TabbedBlocksWidget', TabbedBlocksComponent);
+Scrivito.provideComponent('TabbedContentWidget', TabbedContentComponent);
 
-const TabbedBlock = Scrivito.connect(({ widget, currentTag }) => {
+const TabbedContent = Scrivito.connect(({ widget, currentTag }) => {
   
   
   
   const text = widget.get('text');
   const title = widget.get('title');
-  const image = widget.get('image');
   const tags = widget.get('tags');
   
   
-  const classNames = [ 'col-lg-4', 'text-center', 'squeezed' ];
+  const classNames = ['col-12', 'text-center', 'squeezed'];
   if (currentTag && tags.includes(currentTag)) { classNames.pop('squeezed'); }
 
   return (
     <div className={ classNames.join(' ') }>
 
-        <Scrivito.ImageTag content={ image } height="240" className="img-top"/>
-        <div className="card-body">  
-          <h2 className="card-title">{ title }</h2>
+        
           
-          <div className="card-text">{ text }</div>
-        </div>
+          <h2 className="title">{ title }</h2>
+          <div className="blub">{ text }</div>
+        
     
     </div>
   );

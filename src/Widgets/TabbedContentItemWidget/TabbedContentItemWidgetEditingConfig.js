@@ -1,6 +1,6 @@
 import * as Scrivito from 'scrivito';
 
-Scrivito.provideEditingConfig('TabbedBlocksItemWidget', {
+Scrivito.provideEditingConfig('TabbedContentItemWidget', {
     title: 'Block',
     attributes: {
 
@@ -10,9 +10,6 @@ Scrivito.provideEditingConfig('TabbedBlocksItemWidget', {
         text: {
             title: 'Text',
         },
-        image: {
-            title: 'Image',
-        },
         tags: {
             title: 'Tags',
         },
@@ -20,7 +17,6 @@ Scrivito.provideEditingConfig('TabbedBlocksItemWidget', {
     properties: [
         'title',
         'text',
-        'image',
         'tags',
     ],
 
