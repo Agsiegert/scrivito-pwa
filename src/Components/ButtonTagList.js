@@ -33,7 +33,9 @@ function ButtonTagList({ showTags, tags, currentTag, setTag }) {
         className="d-block d-sm-none"
       >
         
-        
+        {
+          tags.map(tag => <option key={ tag } value={ tag }>{ tag }</option>)
+        }
       </select>
     </div>
   );

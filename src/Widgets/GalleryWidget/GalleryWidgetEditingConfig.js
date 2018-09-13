@@ -8,8 +8,10 @@ Scrivito.provideEditingConfig('GalleryWidget', {
         images: {
             title: 'Images',
         },
+
     },
     properties: [
         'images',
+
     ],
 });

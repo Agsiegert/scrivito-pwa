@@ -17,6 +17,7 @@ function GalleryWidgetComponent({ widget }) {
   const settings = sliderSettings(images);
   return (
     <div className="slick-gallary-fluid">
+
       <Slider { ...settings } className="slickslide">
         {
           images.map((image, index) =>
@@ -27,6 +28,7 @@ function GalleryWidgetComponent({ widget }) {
             />)
         }
       </Slider>
+      
     </div>
   );
 }
@@ -36,14 +38,15 @@ Scrivito.provideComponent('GalleryWidget', GalleryWidgetComponent);
 function sliderSettings(images) {
   return {
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 7000,
     centerMode: true,
     centerPadding: '0px',
     cssEase: 'linear',
     dots: true,
-    fade: true,
+    fade: false,
     infinite: true,
+    lazyLoad: true,
     slide: 'li',
     slidesToShow: 1,
     speed: 500,

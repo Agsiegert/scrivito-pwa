@@ -103,8 +103,8 @@ const TabbedContent = Scrivito.connect(({ widget, currentTag }) => {
 
         
           
-          <h2 className="title">{ title }</h2>
-          <div className="blub">{ text }</div>
+          <h2 className="title h3">{ title }</h2>
+          <div>{ text }</div>
         
     
     </div>
@@ -121,7 +121,7 @@ function allTags(items) {
   const uniqueTags = [...new Set(tags)];
 
   // sort tags
-  return uniqueTags.sort();
+  return uniqueTags;
 }
 
 

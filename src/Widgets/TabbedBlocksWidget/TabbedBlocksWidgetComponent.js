@@ -104,7 +104,7 @@ const TabbedBlock = Scrivito.connect(({ widget, currentTag }) => {
 
         <Scrivito.ImageTag content={ image } height="240" className="img-top"/>
         <div className="card-body">  
-          <h2 className="card-title">{ title }</h2>
+          <h2 className="card-title h3">{ title }</h2>
           
           <div className="card-text">{ text }</div>
         </div>

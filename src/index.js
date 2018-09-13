@@ -9,9 +9,6 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 window.prerenderReady = false;
-ReactDOM.render(<App />, document.getElementById('application'));
+ReactDOM.render( < App / > , document.getElementById('application'));
 registerServiceWorker();
 Scrivito.finishLoading().then(() => { window.prerenderReady = true; });
-
-
-

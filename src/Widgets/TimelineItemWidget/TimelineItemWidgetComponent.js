@@ -36,7 +36,7 @@ Scrivito.provideComponent('TimelineItemWidget', ({ widget }) =>
     />
     
     </li>
-    <li className="text-right mt-0 pt-0  bg-white rounded shadow">
+    <li className="text-right mt-0 pt-0 pl-3 bg-white rounded shadow">
     
     <Scrivito.ContentTag
       content={ widget }

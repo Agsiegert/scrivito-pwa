@@ -7,5 +7,6 @@ Scrivito.provideEditingConfig('FactWidget', {
     initialContent: {
         key: 'Lorem ipsum',
         value: '12',
+
     },
 });

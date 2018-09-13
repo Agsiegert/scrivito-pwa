@@ -1,18 +1,18 @@
 import * as Scrivito from 'scrivito';
 import { registerTextExtract } from '../../utils/textExtractRegistry';
 
-const FactWidget = Scrivito.provideWidgetClass('FactWidget', {
+const FactCounterWidget = Scrivito.provideWidgetClass('FactCounterWidget', {
     attributes: {
         key: 'string',
         value: 'string',
-
+        postfix: 'string'
     },
 });
 
-registerTextExtract('FactWidget', [
+registerTextExtract('FactCounterWidget', [
     { attribute: 'key', type: 'string' },
     { attribute: 'value', type: 'string' },
-
+    { attribute: 'postfix', type: 'string' },
 ]);
 
-export default FactWidget;
+export default FactCounterWidget;
